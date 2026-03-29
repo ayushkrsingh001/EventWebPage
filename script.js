@@ -1,4 +1,4 @@
-// Contact Form Popup
+
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
@@ -8,10 +8,10 @@ if (contactForm) {
     });
 }
 
-// Registration Form Popup
+
 const registrationForm = document.getElementById('registration-form');
 if (registrationForm) {
-    registrationForm.addEventListener('submit', function(e) {
+    registrationForm.addEventListener('submit', function (e) {
         e.preventDefault();
         alert("Registration successful! We look forward to seeing you at the event.");
         registrationForm.reset();
