@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - TechNova 2026</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header id="navbar">
         <div class="logo">TechNova <span>2026</span></div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
@@ -21,14 +25,15 @@
                 <li><a href="register.html">Register</a></li>
             </ul>
         </nav>
-        <div class="hamburger">
+        <label for="nav-toggle" class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
-        </div>
+        </label>
     </header>
 
-    <section class="contact" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding-top: 100px;">
+    <section class="contact"
+        style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding-top: 100px;">
         <div class="form-container fade-in" style="width: 100%; margin-top: 40px;">
             <h2 style="margin-bottom: 30px;">Event Registration</h2>
             <form id="registration-form">
@@ -63,16 +68,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        const regForm = document.getElementById('registration-form');
-        if (regForm) {
-            regForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Registration successful! We will see you at the event.');
-                regForm.reset();
-                window.location.href = 'index.html';
-            });
-        }
-    </script>
 </body>
+
 </html>
